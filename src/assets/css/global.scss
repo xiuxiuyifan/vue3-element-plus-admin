@@ -1,0 +1,44 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f1f1;
+}
+.ib {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*
+垂直居中2
+*/
+.pat {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/*
+清除浮动
+*/
+.cf::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/*
+鼠标变手
+*/
+.cp {
+  cursor: pointer;
+}
+
+
+a{
+  text-decoration:none;
+  color:#333;
+}
