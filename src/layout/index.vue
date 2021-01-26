@@ -22,7 +22,13 @@
       </el-header>
       <el-main class="el-main">
         <el-scrollbar class="el-main-scrollbar">
-          <router-view></router-view>
+          <router-view v-slot="{ Component }">
+            <transition name="fade-transform" mode="out-in">
+              <keep-alive>
+                <component :is="Component"/>
+              </keep-alive>
+            </transition>
+          </router-view>
         </el-scrollbar>
       </el-main>
     </el-container>
@@ -76,6 +82,20 @@ export default {
   }
   .el-main-scrollbar{
     border-radius: 7px;
+  }
+  .fade-transform-leave-active,
+  .fade-transform-enter-active {
+    transition: all .5s;
+  }
+
+  .fade-transform-enter {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  .fade-transform-leave-to {
+    opacity: 0;
+    transform: translateX(20px);
   }
 }
 </style>

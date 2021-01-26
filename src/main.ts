@@ -1,13 +1,15 @@
 import { createApp } from 'vue'
 import ElementPlus from 'element-plus';
 
-import 'normalize.css'
-import './assets/css/global.scss'
-import './assets/css/element-variables.scss'
 import App from './App.vue'
 import router from './router/index'
 import store from "@/store";
 import './permission'
+
+//css
+import 'normalize.css'
+import './assets/css/global.scss'
+import './assets/css/element-variables.scss'
 
 
 const app = createApp(App)

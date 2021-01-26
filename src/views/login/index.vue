@@ -8,13 +8,14 @@
             label-position="top"
             label-width="100px"
             ref="ruleForm"
-            status-icon
+            :model="ruleForm"
+            :rules="rules"
         >
           <el-form-item label="用户名/邮箱" prop="account">
             <el-input
                 autocomplete="off"
                 placeholder="用户名admin"
-                type="text"
+                clearable
                 v-model="ruleForm.account"
             ></el-input>
           </el-form-item>
@@ -23,6 +24,7 @@
                 autocomplete="off"
                 placeholder="密码123456"
                 type="password"
+                clearable
                 v-model="ruleForm.password"
             ></el-input>
           </el-form-item>
@@ -40,31 +42,31 @@
 <script lang="ts">
 import {useRouter} from "vue-router";
 import {useStore} from "vuex"
-import {reactive, ref} from "vue"
+import {ref} from "vue"
 
 export default {
+
+  //由于写的时候element-plus 的form 有bug 所以只能这样样子  有相同的issues
+  // https://github.com/element-plus/element-plus/issues/1176
+  data() {
+    return {
+      ruleForm: {
+        account: "admin",
+        password: "123456"
+      }
+    }
+  },
   setup() {
     const router = useRouter()
     const store = useStore()
-    const ruleForm = reactive({
-      account: "admin",
-      password: "123456"
-    })
 
     const checked = ref(true)
     const rules = {
       account: [
-        { required: true, message: "请输入用户名", trigger: "blur" },
-        { min: 5, max: 15, message: "长度在 3 - 15 个字符以内", trigger: "blur" }
+        { required: true, message: "请输入用户名" }
       ],
       password: [
-        { required: true, message: "请输入密码", trigger: "blur" },
-        {
-          type: "string",
-          require: true,
-          message: "请输入密码！",
-          trigger: "blur"
-        }
+        { required: true, message: "请输入密码" }
       ]
     };
     const login :any = () => store.dispatch('login')
@@ -78,7 +80,6 @@ export default {
     }
     return {
       loginHandle,
-      ruleForm,
       rules,
       checked,
       loading

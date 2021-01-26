@@ -23,7 +23,7 @@ export default {
   display: flex;
   align-items: center;
   .logo-img{
-    width: 45px;
+    width: 34px;
   }
   .logo-world{
     width: 65px;

@@ -1,6 +1,7 @@
 <template>
   <el-menu
       :default-active="defaultActive"
+      router
       class="el-menu-vertical-demo z-menu"
       style="width: 260px"
   >
@@ -9,8 +10,9 @@
 </template>
 
 <script lang="ts">
-import {onMounted} from 'vue'
+import {onMounted,computed} from 'vue'
 import SidebarItem from "@/layout/components/SideBar/SidebarItem.vue";
+import {useRouter} from 'vue-router'
 
 export default {
   name: 'z-menu',
@@ -23,15 +25,18 @@ export default {
       },
     },
   },
-  data() {
-    return {
-      defaultActive: '',
-    }
-  },
-  setup(props: any) {
-    onMounted(() => {
-      console.log(props.menu)
+  setup() {
+    let route = useRouter().currentRoute
+    let defaultActive = computed(()=>{
+      return route.value.path
     })
+
+    onMounted(() => {
+    })
+
+    return {
+      defaultActive
+    }
   }
 };
 </script>

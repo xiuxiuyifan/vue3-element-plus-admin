@@ -1,24 +1,41 @@
-# vue3
+# vue3-element-plus-admin
+## 项目截图
 
-## Project setup
+### 登录
+
+![1611591445252](C:\Users\code\vue\vue3-element-plus-admin\image\1611591445252.png)
+
+## 安装依赖
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+## 编译&启动
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+## 编译&打包
 ```
 yarn build
 ```
 
-### Lints and fixes files
+## Lints and fixes files
 ```
 yarn lint
 ```
 
-### Customize configuration
+## 参考文档
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+## 项目说明
+
+## 实现思路还原
+
+### 鉴权
+
+### 渲染菜单
+
+### 动态添加路由
+

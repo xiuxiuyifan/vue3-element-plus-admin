@@ -1,11 +1,15 @@
+import NProgress from 'nprogress'
 import router from './router/index'
 import {getToken} from "@/utils/utils";
+import 'nprogress/nprogress.css'
+
 
 import store from './store/index'
 
 const whiteList = ['/login']
 
 router.beforeEach(async (to, from, next) => {
+  NProgress.start()
   if (getToken()) {
     if (to.path === '/login') {
       next('/dashboard')
@@ -33,4 +37,8 @@ router.beforeEach(async (to, from, next) => {
       next(`/login?redirect=${to.path}`)
     }
   }
+})
+
+router.afterEach(()=>{
+  NProgress.done()
 })
