@@ -7,9 +7,10 @@
 
 <script>
 export default {
-  name: 'z-logo'
+  name: 'v-logo'
 }
 </script>
+
 <style lang="scss" scoped>
 .logo {
   height: 50px;

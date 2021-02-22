@@ -19,14 +19,14 @@
           <span>{{ item.meta.title }}</span>
         </el-menu-item>
       </router-link>
-      <sidebar-item v-else :menu="item"></sidebar-item>
+      <v-sidebar-item v-else :menu="item"></v-sidebar-item>
     </template>
   </el-submenu>
 </template>
 
 <script lang="ts">
 export default {
-  name: 'sidebar-item',
+  name: 'v-sidebar-item',
   props: {
     menu: {
       type: Object,

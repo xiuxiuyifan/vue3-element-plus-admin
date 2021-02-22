@@ -8,7 +8,7 @@ const state = {
   roles: [],
   //用户可访问的路由信息
   accessRoutes: [],
-  //登录返回的菜单信息
+  //后台获取的菜单信息
   menu: []
 }
 const mutations = {
@@ -45,6 +45,7 @@ const actions = {
       let routes = menuToRouter(menu)
       commit('SET_ROLES', roles)
       commit('SET_ACCESS_ROUTES', routes)
+      commit('SET_MENU', menu)
       resolve({
         roles,
         routes

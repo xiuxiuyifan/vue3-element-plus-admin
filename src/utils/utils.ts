@@ -36,7 +36,6 @@ const menuToRouter = (menu: any) => {
     })
   }
   recursionMenu(menu)
-  console.log(router);
   return router
 }
 

@@ -8,6 +8,8 @@ const menu = [
     "path": "/dashboard",
     "component": "dashboard/index",
     "route": "1",
+    "id": '0',
+    "pid": null,
     "meta": {
       "keepAlive": true,
       "internalOrExternal": false,
@@ -22,6 +24,8 @@ const menu = [
     "path": "/table",
     "component": "/table",
     "route": "1",
+    "id": '1',
+    "pid": null,
     "meta": {
       "keepAlive": true,
       "internalOrExternal": false,
@@ -36,6 +40,8 @@ const menu = [
         "path": "/table/tree-table",
         "component": "table/tree-table/index",
         "route": "2",
+        "pid": '1',
+        "id": '2',
         "meta": {
           "keepAlive": true,
           "internalOrExternal": false,
@@ -50,6 +56,8 @@ const menu = [
         "path": "/table/merge-table",
         "component": "table/merge-table/index",
         "route": "2",
+        "pid": '1',
+        "id": '3',
         "meta": {
           "keepAlive": true,
           "internalOrExternal": false,
@@ -62,6 +70,8 @@ const menu = [
           {
             path: "/table/merge-table/detail1",
             component: "table/merge-table/detail1/index",
+            "pid": '3',
+            "id": '4',
             meta: {
               title: "三级菜单-1",
             }
@@ -69,6 +79,8 @@ const menu = [
           {
             path: "/table/merge-table/detail2",
             component: "table/merge-table/detail2/index",
+            "pid": '3',
+            "id": '5',
             meta: {
               title: "三级菜单-2",
             }

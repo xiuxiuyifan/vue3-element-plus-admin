@@ -1,6 +1,6 @@
 import Layout from "@/layout/index.vue";
 
-const getInfo = ()=>{
+const getInfo = () => {
   const newRouter = [
     {
       path: '/',
@@ -22,7 +22,7 @@ const getInfo = ()=>{
       ]
     }
   ]
-  return new Promise((resolve,reject)=>{
+  return new Promise((resolve, reject) => {
     resolve(newRouter)
   })
 }
