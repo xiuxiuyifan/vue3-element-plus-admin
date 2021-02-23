@@ -1,7 +1,9 @@
 # vue3-element-plus-admin
 ## 查看项目
 
-[点击前往](http://wangfan.store)
+[点击前往](https://xiuxiuyifan.github.io/vue3-element-plus-admin)  目前是在git pages上面放置，如果慢的话后期会放到ecs上面去
+
+[点击前往](http://wangfan.store)  这个是Vue3 组件库的项目，后期准备进行扩展。
 
 ## 项目截图
 
