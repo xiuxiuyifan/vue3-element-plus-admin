@@ -1,7 +1,6 @@
 <template>
   <div class="dashboard">
-    <el-button>按钮</el-button>
-    <div style="height: 1000px">盒子</div>
+    <div style="height: 1000px">空空如也</div>
   </div>
 </template>
 <style lang="scss" scoped>
