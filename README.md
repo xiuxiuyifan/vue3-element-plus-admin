@@ -11,7 +11,7 @@
 
 ### 首页
 
-![1614091657497](C:\Users\code\vue\vue3-element-plus-admin\image\1614091657497.png)
+![1614091657497](./image/1614091657497.png)
 
 > 说明，因为是出于学习的目的，项目里面只实现了一个pc 端admin 的基本框架，基于Vue cli 的Vue3 的一个项目。里面没有写一些业务的实现，小伙伴可以基于现在实现的思路进行改造和扩展，比如，有的admin是顶部菜单+侧边菜单。遇到具体业务具体对待，解决问题的思路是互通的，本项目重点实现的项会在下面一一列举出来，有感兴趣的小伙伴，可以克隆本项目到本地研究研究^_^。
 
@@ -65,7 +65,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## 实现思路还原
 
-![1614095362890](C:\Users\code\vue\vue3-element-plus-admin\image\1614095362890.png)
+![1614095362890](./image/1614095362890.png)
 
 ### 鉴权
 
