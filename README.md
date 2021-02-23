@@ -7,7 +7,7 @@
 
 ### 登录
 
-![1611591445252](C:\Users\code\vue\vue3-element-plus-admin\image\1611591445252.png)
+![1611591445252](./image/1611591445252.png)
 
 ### 首页
 
