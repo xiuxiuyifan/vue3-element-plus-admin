@@ -1,4 +1,4 @@
 module.exports = {
-		publicPath: '/vue3-element-plus-admin/',
+		publicPath: '/docs/',
 		outputDir: 'docs'
 }
