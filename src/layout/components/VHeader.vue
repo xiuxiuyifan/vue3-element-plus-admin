@@ -1,8 +1,11 @@
 <template>
-  <el-breadcrumb separator="/">
-    <el-breadcrumb-item :to="{ path: '/dashboard' }">首页</el-breadcrumb-item>
-    <el-breadcrumb-item v-for="(item) in breadListRef" :key="item">{{ item }}</el-breadcrumb-item>
-  </el-breadcrumb>
+  <div class="v-header">
+    <z-icon icon="menu" class="menu-icon"></z-icon>
+    <el-breadcrumb separator="/">
+      <el-breadcrumb-item :to="{ path: '/dashboard' }">首页</el-breadcrumb-item>
+      <el-breadcrumb-item v-for="(item) in breadListRef" :key="item">{{ item }}</el-breadcrumb-item>
+    </el-breadcrumb>
+  </div>
   <el-dropdown>
     <el-avatar style="cursor:pointer;"> user</el-avatar>
     <template #dropdown>
@@ -17,10 +20,12 @@
 import {useRoute, useRouter} from "vue-router";
 import {computed, watchEffect, ref} from "vue";
 import {useStore} from "vuex";
+import ZIcon from "@/components/Icon";
 
 type a = string []
 export default {
   name: 'v-header',
+  components: {ZIcon},
   setup() {
     const route = useRoute()
     const store = useStore()
@@ -110,5 +115,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.v-header{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  .menu-icon{
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}
 </style>

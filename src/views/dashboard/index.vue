@@ -1,6 +1,7 @@
 <template>
   <div class="dashboard">
-    <div style="height: 1000px">空空如也</div>
+    <div style="height: 1000px">
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
@@ -11,3 +12,7 @@
   padding: 20px;
 }
 </style>
+<script>
+export default {
+};
+</script>
