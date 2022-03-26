@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    // 目标代码
+    "downlevelIteration": true,
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    // 按照node 解析模块的方式去解析
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    // esmodule 和commonjs 能不能混用
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": ["webpack-env", "element-plus/global"],
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  },
+  // 哪些文件是需要被ts解析的
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx",
+    "src/utils/utils.ts"
+  ],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,8 @@
+{
+  "code": 200,
+  "data": {
+    "id": 1,
+    "name": "admin",
+    "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImNvZGVyd2h5Iiwicm9sZSI6eyJpZCI6MSwibmFtZSI6Iui2hee6p-euoeeQhuWRmCJ9LCJpYXQiOjE2MzE5NzI2MzMsImV4cCI6MTYzNDU2NDYzM30.hfU1kmeigzdL2HEhaxIwq9UynLmC_kgRG7A8BNqEkFRprjiBH7DbLG6hhNMBuvNq7Qm6luOF49BavvqSEQwr1pRJqngxoRNDoJRYk19f__7RI3qyXTUd3B09Vs6QfWhW_KjCzzF0-gmC0iQ3DHljUoH0WoDP26FpUZ_gNYHoSF4"
+  }
+}
